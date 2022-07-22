@@ -112,7 +112,8 @@ body{font-family: 'Poppins', sans-serif;
   position: relative;
   background-color: #00404C;
   border-radius: 10px;
-  height: 500px;
+  height: 400px;
+  width: 300px;
   transform-style: preserve-3d;
 }
 
