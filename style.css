@@ -1,87 +1,46 @@
-body{font-family: 'Poppins', sans-serif;
+:root {
+  --primary: #ffe4bc;
+  --merah: #9D1C21;
+  --hijau: #00404C;
+}
+ 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
-/*--------------------------------------------------------------
-# Our Services
---------------------------------------------------------------*/
-.services {
-    padding-bottom: 20px;
-  }
-  .services .icon-box {
-    padding: 30px;
-    position: relative;
-    overflow: hidden;
-    margin: 0 0 40px 0;
-    background: #fff;
-    box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
-    transition: all 0.3s ease-in-out;
-    text-align: center;
-    border: 1px solid #fff;
-  }
-  .services .icon {
-    margin: 0 auto 20px auto;
-    padding-top: 17px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    width: 72px;
-    height: 72px;
-  }
-  .services .icon i {
-    font-size: 36px;
-    line-height: 1;
-  }
-  .services .title {
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 18px;
-  }
-  .services .title a {
-    color: #111;
-  }
-  .services .description {
-    font-size: 15px;
-    line-height: 28px;
-    margin-bottom: 0;
-  }
-  .services .icon-box-pink .icon {
-    background: #fceef3;
-  }
-  .services .icon-box-pink .icon i {
-    color: #ff689b;
-  }
-  .services .icon-box-pink:hover {
-    border-color: #ff689b;
-  }
-  .services .icon-box-cyan .icon {
-    background: #e6fdfc;
-  }
-  .services .icon-box-cyan .icon i {
-    color: #3fcdc7;
-  }
-  .services .icon-box-cyan:hover {
-    border-color: #3fcdc7;
-  }
-  .services .icon-box-green .icon {
-    background: #eafde7;
-  }
-  .services .icon-box-green .icon i {
-    color: #41cf2e;
-  }
-  .services .icon-box-green:hover {
-    border-color: #41cf2e;
-  }
-  .services .icon-box-blue .icon {
-    background: #e1eeff;
-  }
-  .services .icon-box-blue .icon i {
-    color: #2282ff;
-  }
-  .services .icon-box-blue:hover {
-    border-color: #2282ff;
-  }
+body{font-family: 'Poppins', sans-serif;
+}
 
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+  background-color: #00404c;
+  height: 45px;
+}
+
+ /* rounded */
+ .rounded-sosial{
+  border-radius: 25px;
+}
+
+.rounded-foto{
+  border-radius: 100px;
+  width: 80px;
+  height: 80px;
+}
+
+.rounded-foto-card{
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+}
 
   /* carousel caption */
 
@@ -91,6 +50,14 @@ body{font-family: 'Poppins', sans-serif;
     right: 40%;
     bottom : initial;
     top : 15%
+  }
+
+  .daftar-skr{
+   color: var(--primary);
+   width: 20rem;
+   border-radius: 15px;
+   font-size: 150%;
+   background-color: var(--hijau) ;
   }
 
   /* Warna Font */
@@ -104,96 +71,233 @@ body{font-family: 'Poppins', sans-serif;
   .cream{
     color:#FFE4BC;
   }
-  
+  .hijau{
+    color: #475D5D;
+  }
+  .hijau-medok{
+    color: #00404c;
+  }
 
+/* Dampak Sosial */
 
-/* Testimoni Section */
-.testimoni-box{
-  position: relative;
-  background-color: #00404C;
-  border-radius: 10px;
+.label-sosial{
+  background-color: #FFE4BC;
+  border-radius: 18px;
+  border: solid;
+  border-radius: 20px;
+  height: 5rem;
+  border-color: #FFE4BC;
+}
+
+.gambar-mitra-bali{
   height: 400px;
-  width: 300px;
-  transform-style: preserve-3d;
+  width: 600px;
+  border-radius: 15px;
+  background-color: #FFE4BC;
 }
 
-.testimoni-box::before {
- content:'TESTI';
- position: absolute;
- color: #fff;
- font-size: 4em;
- font-weight: bold;
- font-style: italic;
- top: 30px;
- left: 50%;
- transform: translate(-50%,0);
- opacity: 0;
- transition: 0.5s;
+
+.img-border {
+  position: relative;
+  height: 400px;
 }
 
-.testimoni-box:hover::before{
-  opacity: 0.2;
-}
-
-.testimoni-box::after {
-  content:'MONI';
+.img-border::before {
   position: absolute;
-  color: #fff;
-  font-size: 4em;
-  font-weight: bold;
-  font-style: italic;
-  top: 350px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  opacity: 0;
+  content: "";
+  top: 1rem;
+  left: 4rem;
+  right: -1rem;
+  bottom: 1rem;
+  border: 20px solid var(--primary);
+  border-radius: 15px;
+}
+
+.img-border img {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  width: calc(100% - 3rem);
+  height: calc(100% - 2rem);
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Konsep Bisnis */
+
+.card-bisnis{
+  border: solid;
+  border-radius: 20px;
+  height: 22.5%;
+  border-width: 3.5px;
+}
+
+.bg-cream{
+  background-color: #FFE4BC;
+  border-radius: 18px;
   transition: 0.5s;
- }
+  border: solid;
+  border-color: #ddc299;
+  border-width: 7px;
+}
 
- .testimoni-box:hover::after{
-  opacity: 0.2;
- }
+.bg-cream:hover{
+  transform: translateX(-20px);
+}
 
- .testimoni-name{
-  position: absolute;
-  top: 0;
+/* Mitra Terpercaya */
+.mitra{
+  position: relative;
+
   width: 100%;
+  height: 80vh;
+  background-color: #FFE4BC;
+  overflow: hidden;
+}
+
+/* Pilih Mitra */
+.pilih-mitra{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+  margin-top: 20px;
+
+}
+
+.card{
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  height: 400px;
+  width: 246px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 100;
+}
+
+section.card .image{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #fff;
+  box-shadow: 0px -1px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.btn-mitra{
   color: #fff;
-  text-align: center;
-  font-size: 2em;
-  opacity: 0;
-  transform: translate3d(0,0,50px);
-  transition: 0.5s;
- }
+  border-radius: 50px;
+  width: 50%;
+  margin-top:7%;
+}
 
- .testimoni-box:hover .testimoni-name{
-  top: 20px;
-  opacity: 1;
- }
-
- .testimoni-detail-button{
+.box1{
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate3d(-50%, 0, 100px);
-  opacity: 0;
-  transition: 0.5s;
- }
+  width: 100%;
+  height: 27.5%;
+  border-radius:20px 20px 0 0 ;
+  background:linear-gradient(106.32deg, #FAA719 14.23%,
+  rgba(255 , 25, 25, 0)139.97%);
+}
 
- .testimoni-box:hover .testimoni-detail-button{
-  opacity: 1;
-  bottom: 20px;
- }
-
- .testimoni-img{
+.box2{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%,-50%,100px);
-  max-width: 250px;
-  transition: 0.5s; 
- }
+  width: 100%;
+  height: 27.5%;
+  border-radius:20px 20px 0 0 ;
+  background:linear-gradient(106.32deg, #9D1C21 14.23%,
+  rgba(255 , 25, 25, 0)139.97%);
+}
 
- .testimoni-box:hover .testimoni-img{
-  transform: translate3d(-50%,-50%,100px) rotate(3deg)scale(1.2);
+.box3{
+  position: absolute;
+  width: 100%;
+  height: 27.5%;
+  border-radius:20px 20px 0 0 ;
+  background:linear-gradient(106.32deg, #3F8B7C 14.23%,
+  rgba(255 , 25, 25, 0)139.97%);
+}
 
- }
+
+ /* Section wave start */
+
+.group{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #00404C;
+  overflow: hidden;
+}
+
+ .wave {
+  position:absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	background: url(assets/img/wavenia4.png);
+	background-size: 1600px 300px;
+}
+
+ .wave.wave1{
+	animation: animate-wave-1 2s linear infinite;
+	z-index: 1000;
+	opacity: 0.1;
+	animation-delay: 0s;
+	bottom: 0;
+}
+
+ .wave.wave2{
+	animation: animate-wave-2 5s linear infinite;
+	z-index: 999;
+	opacity: 0.2;
+	animation-delay: -5s;
+	bottom: 10;
+}
+
+ .wave.wave3{
+	animation: animate-wave-3 10s linear infinite;
+	z-index: 998;
+	opacity: 0.3;
+	animation-delay: -2s;
+	bottom: 15;
+}
+
+ .wave.wave4{
+	animation: animate-wave-4 10s linear infinite;
+	z-index: 997;
+	opacity: 0.4;
+	animation-delay: -5s;
+	bottom: 20;
+}
+
+@keyframes animate-wave-1 {
+	0% {background-position-x: 0;}
+	100% {background-position-x: 1600px;}
+}
+
+@keyframes animate-wave-2 {
+	0% {background-position-x: 0;}
+	100% {background-position-x: -1600px;}
+}
+@keyframes animate-wave-3 {
+	0% {background-position-x: 0;}
+	100% {background-position-x: 1600px;}
+}
+
+@keyframes animate-wave-4 {
+	0% {background-position-x: 0;}
+	100% {background-position-x: -1600px;}
+}
+
+
+/* wave end */
