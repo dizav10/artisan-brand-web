@@ -366,6 +366,7 @@
 
     <!-- Social Group Start -->
     <section id="group">
+
       <div class="group">
         <div id="vanta"></div>
       <h1 class="text-center mt-5 text-white fw-bold" >Group Sosial</h1>
@@ -522,11 +523,11 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
     <script>
     window.addEventListener('DOMContentLoaded', () => {  
-      VANTA.TOPOLOGY({
+      VANTA.WAVES({
         el: "#vanta",
         mouseControls: true,
         touchControls: true,
@@ -535,6 +536,7 @@
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
+        color: 0x115029,
         backgroundAlpha: 0.0,
       })
     })
