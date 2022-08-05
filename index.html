@@ -336,82 +336,20 @@
                 <div class="swiper-wrapper content">
                   <!-- Card 1 -->
                   <div class="swiper-slide card">
-                    <div class="box1"></div>
-                    <div class="text-center card-content">
-                      <div class="image">
-                        <img src="./assets/img/people/ibu.jpg" class="rounded-foto-card" alt="">
-                      </div>
-                      <div class="name-profession">
-                        <span class="name">Rajib Naskrudin</span><br>
-                        <div class="shop">
-                          <img src="https://img.icons8.com/material-rounded/24/000000/shop.png"/>
-                        </div>
-                        <span class="profession fw-bold fs-5">RPG Tenun Sutra <br>Batik Garut</span><Br>
-                        <span style="font-size: 80%;">Kain sutra tenun dan kain batik</span>
-                      </div>
-                      <div class="location">
-                        <img src="https://img.icons8.com/material-rounded/24/000000/marker.png"><br>
-                        <span style="font-size: 90%;">Jl. Pembangunan belakang kantor Disdik Garut</span>
-                      </div>
-                      <div class="produksi">
-                        <span style="font-size: 70%;">Kapasitas Produksi</span><br>
-                        <span class="fs-2 fw-bold">1300 </span><span>unit/bulan</span>
-                      </div>
-                      <button class="btn btn-mitra" style="background-color:#00404c;">Pilih Mitra</button>
-                    </div>
+                    <img src="./assets/img/people/Fitur pilih mitra/baena.png" alt="">
                   </div>
                   <!-- Card 2 -->
                   <div class="swiper-slide card">
-                    <div class="box2"></div>
-                    <div class="text-center card-content">
-                      <div class="image">
-                        <img src="./assets/img/people/ibu.jpg" class="rounded-foto-card" alt="">
-                      </div>
-                      <div class="name-profession">
-                        <span class="name">Rajib Naskrudin</span><br>
-                        <div class="shop">
-                          <img src="https://img.icons8.com/material-rounded/24/000000/shop.png"/>
-                        </div>
-                        <span class="profession fw-bold fs-5">RPG Tenun Sutra <br>Batik Garut</span><Br>
-                          <span style="font-size: 80%;">Kain sutra tenun dan kain batik</span>
-                      </div>
-                      <div class="location">
-                        <img src="https://img.icons8.com/material-rounded/24/000000/marker.png"><br>
-                        <span class="fs-6">Jl. Pembangunan belakang kantor Disdik Garut</span>
-                      </div>
-                      <div class="produksi">
-                        <span style="font-size: 70%;">Kapasitas Produksi</span><br>
-                        <span class="fs-2 fw-bold">1300 </span><span>unit/bulan</span>
-                      </div>
-                      <button class="btn btn-mitra" style="background-color:#00404c;">Pilih Mitra</button>
-                    </div>
+                    <img src="./assets/img/people/Fitur pilih mitra/franz.png" alt="">
                   </div>
                   <!-- Card 3 -->
                   <div class="swiper-slide card">
-                    <div class="box3"></div>
-                    <div class="text-center card-content">
-                      <div class="image">
-                        <img src="./assets/img/people/ibu.jpg" class="rounded-foto-card" alt="">
-                      </div>
-                      <div class="name-profession">
-                        <span class="name">Rajib Naskrudin</span><br>
-                        <div class="shop">
-                          <img src="https://img.icons8.com/material-rounded/24/000000/shop.png"/>
-                        </div>
-                        <span class="profession fw-bold fs-5">RPG Tenun Sutra <br>Batik Garut</span><Br>
-                          <span style="font-size: 80%;">Kain sutra tenun dan kain batik</span>
-                      </div>
-                      <div class="location">
-                        <img src="https://img.icons8.com/material-rounded/24/000000/marker.png"><br>
-                        <span class="fs-6">Jl. Pembangunan belakang kantor Disdik Garut</span>
-                      </div>
-                      <div class="produksi">
-                        <span style="font-size: 70%;">Kapasitas Produksi</span><br>
-                        <span class="fs-2 fw-bold">1300 </span><span>unit/bulan</span>
-                      </div>
-                      <button class="btn btn-mitra" style="background-color: #00404c;">Pilih Mitra</button>
-                    </div>
+                    <img src="./assets/img/people/Fitur pilih mitra/i-wayan-rusian.png" alt="">
                   </div>
+                  <!-- Card 4 -->
+                  <div class="swiper-slide card">
+                    <img src="./assets/img/people/Fitur pilih mitra/yantono.png" alt="">
+                  </div>                  
                 </div>
                 <!-- <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div> -->
@@ -551,12 +489,12 @@
         </div>
     </div>
 
+    <div id="vanta"></div>
 
-
-      <div class="wave wave1"></div>
+      <!-- <div class="wave wave1"></div>
       <div class="wave wave2"></div>
       <div class="wave wave3"></div>
-      <div class="wave wave4"></div>
+      <div class="wave wave4"></div> -->
     </section>
   </div>
 
@@ -578,6 +516,33 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {  
+      VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundAlpha: 0.0,
+        color1: 0xededed,
+        wingSpan: 40.00,
+        separation: 100.00,
+        alignment: 77.00,
+        cohesion: 5.00,
+      })
+      setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+      }, 1000)
+    })
+    </script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
