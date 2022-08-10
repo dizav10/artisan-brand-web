@@ -78,15 +78,6 @@ body{font-family: 'Poppins', sans-serif;
     color: #00404c;
   }
 
-  #vanta {
-    z-index: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }  
-
 /* Dampak Sosial */
 
 .label-sosial{
@@ -157,6 +148,7 @@ body{font-family: 'Poppins', sans-serif;
 /* Mitra Terpercaya */
 .mitra{
   position: relative;
+
   width: 100%;
   height: 80vh;
   background-color: #FFE4BC;
