@@ -227,6 +227,10 @@ section.card .image{
   rgba(255 , 25, 25, 0)139.97%);
 }
 
+.hover-gs:hover{
+  transform: translateY(-10px);
+  background-color: #faa719;
+}
 
  /* Section wave start */
 
@@ -243,7 +247,7 @@ section.card .image{
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 200px;
+	height: 160px;
 	background: url(assets/img/wavenia4.png);
 	background-size: 1600px 300px;
 }
